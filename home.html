@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Qadir Corporation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script>
+    const backgroundImages = [
+      'home-image/robotic-Specialist.jpg',
+      'home-image/ronotic-automation-specialist.jpg',
+    ];
+
+    function setRandomBackground() {
+      const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+      const selectedImage = backgroundImages[randomIndex];
+      document.getElementById('homepage-bg').style.backgroundImage = `url(${selectedImage})`;
+    }
+
+    window.addEventListener('load', setRandomBackground);
+
+    function changeBackground(event) {
+      event.preventDefault();
+      setRandomBackground();
+    }
+  </script>
+</head>
+
+<body id="homepage-bg">
+  <div class="main-menu" style="opacity: 0.9;">
+    <div class="logo-container">
+      <img src="Logo.png" alt="Logo">
+    </div>
+    <div class="navigation-bar">
+        <a href="home.html" class="navigation-item" id="home-link" onclick="changeBackground(event)">Home</a>
+        <a href="about-us.html" class="navigation-item" id="about-link">Who We Are</a>
+        <a href="project.html" class="navigation-item" id="project-link">Projects</a>
+        <a href="board-info.html" class="navigation-item" id="board-link">Board of Directors</a>
+        <a href="product.html" class="navigation-item" id="product-link">Product</a>        
+    </div>
+  </div>
+  <div id="homepage-description-div">
+    <h1>Robotic Automation <br> System Specialists</h1>
+    <p>With our strong People Values and Teamwork, we work in close partnership with our Customers to transform the way we Build, Sustain and Live since 2008.</p>
+  </div>
+</body>
+
+</html>

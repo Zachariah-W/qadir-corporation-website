@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="staff-info.js"></script>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="logo-container">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <div class="navigation-bar">
+            <a href="home.html" class="navigation-item" id="home-link" onclick="changeBackground(event)">Home</a>
+            <a href="about-us.html" class="navigation-item" id="about-link">Who We Are</a>
+            <a href="project.html" class="navigation-item" id="project-link">Projects</a>
+            <a href="board-info.html" class="navigation-item" id="board-link">Board of Directors</a>
+            <a href="product.html" class="navigation-item" id="product-link">Product</a>            
+        </div>
+    </div>
+    <br>
+    <div class="main-content">
+        <div id="board-info">
+            <div class="staff-info" id="yuchin-info" onmouseenter="yuchinInfo()" onmouseleave="yuchinOgInfo()">
+                <h3>Yuchin Lin</h3>
+                <p class="small-staff-description">Chief Finance Officer</p>
+            </div>            
+            <div class="staff-info" id="collun-info" onmouseover="collunInfo()" onmouseleave="collunOgInfo()">
+                <h3>Collun Wang</h3>
+                <p class="small-staff-description">Chief Executive Officer</p>
+            </div>
+            <div class="staff-info" id="hoffmann-info" onmouseover="hoffmannInfo()" onmouseleave="hoffmannOgInfo()">
+                <h3>Hoffmann Liu</h3>
+                <p class="small-staff-description">Chief Technology Officer</p>
+            </div>
+            <div class="staff-info" id="ruby-info" onmouseover="rubyInfo()" onmouseleave="rubyOgInfo()">
+                <h3>Ruby Wang</h3>
+                <p class="small-staff-description">Project Manager</p>
+            </div>
+            <div class="staff-info" id="miffy-info" onmouseover="miffyInfo()" onmouseleave="miffyOgInfo()">
+                <h3>Miffy Yen</h3>
+                <p class="small-staff-description">Legal Counsel</p>
+            </div>
+            <div class="staff-info" id="alex-info" onmouseover="alexInfo()" onmouseleave="alexOgInfo()">
+                <h3>Alex Wu</h3>
+                <p class="small-staff-description">Electrical Controls Engineer</p>
+            </div>
+            <div class="staff-info" id="nick-info" onmouseover="nickInfo()" onmouseleave="nickOgInfo()">
+                <h3>Nick Chung</h3>
+                <p class="small-staff-description">Mechanical Developer</p>
+            </div>
+            <div class="staff-info" id="zhang-info" onmouseover="zhangInfo()" onmouseleave="zhangOgInfo()">
+                <h3>Zhang Lee</h3>
+                <p class="small-staff-description">Robotic Programmer</p>
+            </div>
+            <div class="staff-info" id="livia-info" onmouseover="liviaInfo()" onmouseleave="liviaOgInfo()">
+                <h3>Livia Hsu</h3>
+                <p class="small-staff-description">Office Assistant Manager</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
