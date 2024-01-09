@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Qadir Corporation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script src="product-page/price-calculation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-menu" style="opacity: 0.8;">
+    <div class="logo-container">
+        <img src="Logo.png" alt="Logo">
+    </div>
+    <div class="navigation-bar">
+        <a href="home.html" class="navigation-item" id="home-link" onclick="changeBackground(event)">Home</a>
+        <a href="about-us.html" class="navigation-item" id="about-link">Who We Are</a>
+        <a href="project.html" class="navigation-item" id="project-link">Projects</a>
+        <div class="product-dropdown-menu">
+          <a href="product.html" class="navigation-item" id="product-link">Product</a>
+          <div class="product-dropdown-content">
+              <a href="product-one.html">Product One</a><hr>
+              <a href="product-two.html">Product Two</a><hr>
+              <a href="product-three.html">Product Three</a>
+          </div>
+        </div>
+        <a href="board-info.html" class="navigation-item" id="board-link">Board of Directors</a>
+        <a href="contact-us.html" class="navigation-item" id="contact-link">Contact Us</a>
+    </div>
+  </div>
+  <br>
+  <div id="product-two-banner-div" class="banner-div">
+    <h1>Product Two</h1>
+  </div>
+  <div class="product-main-content">
+    <div id="product-main-description">
+      <h3>Product 1 Information</h3>
+      <p>Content for Product One Goes here</p>
+    </div>
+    <br>
+    <hr class="hr-with-gradient">
+    <br>
+    <div class="product-price-add-up">
+      <div class="product-slide-show">
+        <div class="slide-show-container">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="product-page/663363_0.jpg" class="slideshow-img"></li>
+                <li class="splide__slide"><img src="product-page/663362_0.jpg" class="slideshow-img"></li>
+                <li class="splide__slide"><img src="product-page/663361_0.jpg" class="slideshow-img"></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <br>
+        <button onclick="fullSizeSlideShow()" class="expand-slide-button">Full Screen</button>
+        <hr style="width: 100%;">
+        <div class="price-total-div">
+          <p>Total Price: 0</p>
+        </div>
+      </div>
+      <div class="product-pricing-div">
+        <h2 class="product-price-title">Price Calculator</h2>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">37500</div>
+          </button>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">500</div>
+          </button>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">7350</div>
+          </button>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">6723</div>
+          </button>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">4239823</div>
+          </button>
+          <button class="specific-detail" onclick="product1cat1(this)">
+            <div class="detail-description-of-item">Description of item price</div>
+            <div class="plus-minus-price">+</div>
+            <div class="detail-pricing">37245</div>
+          </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  new Splide( '.splide' ).mount();
+</script>
+
+</html>

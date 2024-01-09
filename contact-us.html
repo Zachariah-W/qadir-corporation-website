@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Qadir Corporation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="main-menu" style="opacity: 0.8;">
+    <div class="logo-container">
+      <img src="Logo.png" alt="Logo">
+    </div>
+    <div class="navigation-bar">
+      <a href="home.html" class="navigation-item" id="home-link" onclick="changeBackground(event)">Home</a>
+      <a href="about-us.html" class="navigation-item" id="about-link">Who We Are</a>
+      <a href="project.html" class="navigation-item" id="project-link">Projects</a>
+      <div class="product-dropdown-menu">
+        <a href="product.html" class="navigation-item" id="product-link">Product</a>
+        <div class="product-dropdown-content">
+          <a href="product-one.html">Product One</a>
+          <hr>
+          <a href="product-two.html">Product Two</a>
+          <hr>
+          <a href="product-three.html">Product Three</a>
+        </div>
+      </div>
+      <a href="board-info.html" class="navigation-item" id="board-link">Board of Directors</a>
+      <a href="contact-us.html" class="navigation-item" id="contact-link">Contact Us</a>
+    </div>
+  </div>
+  <br>
+  <div id="contact-us-banner-div" class="banner-div">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="contact-us-main-content">
+    <div id="contact-main-description">
+        <div id="contact-us-detail-info">
+            <div id="taiwan-contact">
+                <h3 style="color: red;">Qadir Corporation Taiwan</h3>
+                <p>7, Wuquan 1st Road #7F-5, Xinzhuang District New Taipei City, 24892 Taiwan</p>
+                <p>Tel:+886 2 2298 4178</p>
+                <p>service@qadircorp.com</p>
+            </div>
+            <br>
+            <hr style="width: 90%; border: 0.1px solid grey;">
+            <br>
+            <div id="poland-contact">
+                <h3 style="color: red;">Qadir Corporation Poland</h3>
+                <p>Lublin, Lublin District, Poland</p>
+                <p>Contact: Maciej Ganczarski</p>
+                <p>Tel:+48 885 858 882</p>
+                <p>sales@qadircorp.com</p>
+            </div>
+        </div>
+        <div id="contact-map">
+            <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:650px;">
+                <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=No.+7f-5,+Wuquan+1st+Road,+Xinzhuang+District,+New+Taipei+City,+Taiwan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+                <a class="code-for-google-map" href="https://www.bootstrapskins.com/themes" id="get-data-for-embed-map">premium bootstrap themes</a>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  new Splide('.splide').mount();
+</script>
+
+</html>

@@ -7,17 +7,50 @@
   <script src="index.js"></script>
 </head>
 
-<body id="product-bg">
+<body>
   <div class="main-menu" style="opacity: 0.8;">
     <div class="logo-container">
-      <img src="Logo.png" alt="Logo">
+        <img src="Logo.png" alt="Logo">
     </div>
     <div class="navigation-bar">
         <a href="home.html" class="navigation-item" id="home-link" onclick="changeBackground(event)">Home</a>
         <a href="about-us.html" class="navigation-item" id="about-link">Who We Are</a>
         <a href="project.html" class="navigation-item" id="project-link">Projects</a>
+        <div class="product-dropdown-menu">
+          <a href="product.html" class="navigation-item" id="product-link">Product</a>
+          <div class="product-dropdown-content">
+              <a href="product-one.html">Product One</a><hr>
+              <a href="product-two.html">Product Two</a><hr>
+              <a href="product-three.html">Product Three</a>
+          </div>
+        </div>
         <a href="board-info.html" class="navigation-item" id="board-link">Board of Directors</a>
-        <a href="product.html" class="navigation-item" id="product-link">Product</a>        
+    </div>
+  </div>
+  <br>
+  <div id="product-banner-div" class="banner-div">
+    <h1>Our Product</h1>
+  </div>
+  <div class="product-main-content">
+    <div class="product-line">
+      <div id="product-one" class="products-detail-info">
+        <a href="product-one.html">
+          <img src="product-page/663361_0.jpg" class="product-img">
+          <h3 class="product-detail-description">Product One</h3>  
+        </a>
+      </div>
+      <div id="product-two" class="products-detail-info">
+        <a href="product-two.html">
+          <img src="product-page/663362_0.jpg" class="product-img">
+          <h3 class="product-detail-description">Product Two</h3>
+        </a>
+      </div>
+      <div id="product-three" class="products-detail-info">
+        <a href="product-three.html">
+          <img src="product-page/663363_0.jpg" class="product-img">
+          <h3 class="product-detail-description">Product Three</h3>
+        </a>
+      </div>
     </div>
   </div>
 </body>
